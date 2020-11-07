@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="A simple demo for test 3" />
+    <meta name="author" content="FAN MIN" />
+    <title>计算机图形学--Bezier曲线与二维图形变换</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="icon" type="image/x-icon" href="fm.ico" />
+    </head>
+    <body>
+        <h1 id="info">计算机图形学--Bezier曲线与二维图形变换</h1>
+        <div id="bt">
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                  <label for="x_pos" class="col-sm-2 control-label">起始点X坐标</label>
+                  <div class="col-sm-3">
+                    <input type="text" class="form-control" id="x_pos" >
+                  </div>
+                  <label for="y_pos" class="col-sm-2 control-label">起始点Y坐标</label>
+                  <div class="col-sm-3">
+                    <input type="text" class="form-control" id="y_pos">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="ctr_x_pos" class="col-sm-2 control-label">控制点X坐标</label>
+                  <div class="col-sm-3">
+                    <input type="text" class="form-control" id="ctr_x_pos" >
+                  </div>
+                  <label for="ctr_y_pos" class="col-sm-2 control-label">控制点Y坐标</label>
+                  <div class="col-sm-3">
+                    <input type="text" class="form-control" id="ctr_y_pos">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="des_x_pos" class="col-sm-2 control-label">终点X坐标</label>
+                  <div class="col-sm-3">
+                    <input type="text" class="form-control" id="des_x_pos" >
+                  </div>
+                  <label for="des_y_pos" class="col-sm-2 control-label">终点Y坐标</label>
+                  <div class="col-sm-3">
+                    <input type="text" class="form-control" id="des_y_pos">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="scale" class="col-sm-5 control-label">放缩比例</label>
+                    <div class="col-sm-3">
+                      <input type="text" class="form-control" id="s_scale">
+                    </div>
+                </div>
+            </form>  
+            <div class="btn-group">
+              <button  id="bezier" type="button" class="btn btn-primary">Bezier曲线</button>
+                <button  id="translate" type="button" class="btn btn-primary">平移</button>
+                <button  id="rotate" type="button" class="btn btn-primary">旋转</button>
+                <button  id="scale" type="button" class="btn btn-primary">缩放</button>
+            </div>
+        </div>
+        <canvas id="myCanvas"></canvas>
+        <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="graphic.js"></script>
+        </body>
+</html>
