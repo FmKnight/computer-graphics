@@ -24,7 +24,7 @@
 
 ```
 
-## 页面配
+## 页面配置
 
 ![image-20201107154544927](https://github.com/FmKnight/Images/blob/master/2020-11-07-计算机图形学/image-20201107154544927.png)
 
